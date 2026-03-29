@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "HR-Mentor-.#####",
+ "creation": "2026-03-26 12:54:56.708977",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nvjs",
+  "amended_from",
+  "mentor_name",
+  "mentor_email",
+  "mentor_number",
+  "expertise_areas",
+  "maximum_shadow_capacity",
+  "active_mentees_count",
+  "mentees_active_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nvjs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Mentor Profile",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "mentor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mentor Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mentor_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mentor Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mentor_number",
+   "fieldtype": "Data",
+   "label": "Mentor Number"
+  },
+  {
+   "fieldname": "expertise_areas",
+   "fieldtype": "Small Text",
+   "label": "Expertise areas"
+  },
+  {
+   "fieldname": "maximum_shadow_capacity",
+   "fieldtype": "Int",
+   "label": "Maximum Shadow Capacity"
+  },
+  {
+   "fieldname": "active_mentees_count",
+   "fieldtype": "Int",
+   "label": "Active Mentees Count"
+  },
+  {
+   "fieldname": "mentees_active_list",
+   "fieldtype": "Table",
+   "label": "Mentees Active List",
+   "options": "Mentees Active List"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-26 15:26:31.562766",
+ "modified_by": "Administrator",
+ "module": "Resource Management",
+ "name": "Mentor Profile",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
