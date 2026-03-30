@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-26 12:56:42.162795",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "maximum_shadow_duration",
+  "minimum_passing_score",
+  "reminder_intervals_for_evaluation",
+  "notification_preferences",
+  "notify_prefers"
+ ],
+ "fields": [
+  {
+   "default": "30",
+   "fieldname": "maximum_shadow_duration",
+   "fieldtype": "Int",
+   "label": "Maximum Shadow Duration"
+  },
+  {
+   "fieldname": "minimum_passing_score",
+   "fieldtype": "Float",
+   "label": "Minimum Passing Score"
+  },
+  {
+   "fieldname": "reminder_intervals_for_evaluation",
+   "fieldtype": "Int",
+   "label": "Reminder Intervals For Evaluation"
+  },
+  {
+   "default": "0",
+   "fieldname": "notification_preferences",
+   "fieldtype": "Check",
+   "label": "Notification preferences"
+  },
+  {
+   "depends_on": "eval:doc.notification_preferences == 1",
+   "fieldname": "notify_prefers",
+   "fieldtype": "Select",
+   "label": "Notify Prefers",
+   "options": "Daily\nWeekly\nMonthly\nQuarterly\nYearly"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-03-26 13:05:24.501559",
+ "modified_by": "Administrator",
+ "module": "Resource Management",
+ "name": "Shadow Track Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
